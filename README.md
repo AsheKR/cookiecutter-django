@@ -16,4 +16,5 @@ anyone with access to the repository can generate a new repository with the same
 ## Features
 
 - Works with Python 3.8
+- Default integration with [pre-commit](https://github.com/pre-commit/pre-commit) for identifying simple issues before submission to code review
 
