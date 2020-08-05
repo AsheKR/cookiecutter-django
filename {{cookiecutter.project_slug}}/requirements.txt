@@ -2,9 +2,9 @@
 # ---- ---- ---- ----
 pre-commit==2.6.0  # https://pre-commit.com/
 prospector==1.3.0  # https://github.com/PyCQA/prospector
+coverage==5.2.1  # https://github.com/nedbat/coveragepy
 
 # Testing
 # ---- ---- ---- ----
-pytest==6.0.1
-pytest-instafail==0.4.2
-
+pytest==6.0.1  # https://github.com/pytest-dev/pytest1
+pytest-sugar==0.9.4  # https://github.com/Frozenball/pytest-sugar
