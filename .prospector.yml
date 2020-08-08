@@ -8,5 +8,9 @@ member-warnings: true
 pep8:
     full: true
 
+pylint:
+    disable:
+        - redefined-outer-name
+
 dodgy:
     run: true
