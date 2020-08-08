@@ -1,8 +1,8 @@
 <p align="center">
-  <img alt="{{ cookiecutter.project_name }} Template" title="{{ cookiecutter.project_name }} Template" src="./assets/logo.png" width="128">
+  <img alt="{{ cookiecutter.project_name }}" title="{{ cookiecutter.project_name }}" src="./assets/logo.png" width="128">
 </p>
 
-<h1 align="center">{{ cookiecutter.project_name }} Template</h1>
+<h1 align="center">{{ cookiecutter.project_name }}</h1>
 
 <p align="center">
   <a href="#overview">Overview</a> |
