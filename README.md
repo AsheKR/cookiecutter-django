@@ -1,8 +1,8 @@
 <p align="center">
-  <img alt="CookieCutter Python" title="CookieCutter Python" src="./assets/logo.png" width="128">
+  <img alt="CookieCutter Django" title="CookieCutter Django" src="./assets/logo.png" width="128">
 </p>
 
-<h1 align="center">CookieCutter Python</h1>
+<h1 align="center">CookieCutter Django</h1>
 
 <p align="center">
   <a href="#overview">Overview</a> |
