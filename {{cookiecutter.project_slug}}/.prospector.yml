@@ -11,3 +11,7 @@ dodgy:
 
 pep8:
     full: true
+
+pylint:
+    disable:
+        - too-few-public-methods

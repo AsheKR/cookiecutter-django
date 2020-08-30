@@ -15,3 +15,4 @@ pep8:
 pylint:
     disable:
         - redefined-outer-name
+        - too-few-public-methods
