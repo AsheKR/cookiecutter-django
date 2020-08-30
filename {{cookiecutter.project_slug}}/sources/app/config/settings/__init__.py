@@ -1,18 +1,15 @@
-# pylint: disable=import-error
-# flake8: noqa
+from os import environ
 
-from .app import *
-from .asset import *
-from .database import *
-from .i18n import *
-from .middleware import *
-from .password import *
-from .security import *
-from .template import *
-from .timezone import *
-from .wsgi import *
+from split_settings.tools import optional, include
 
+environ.setdefault('DJANGO_ENV', 'development')
+ENV = environ['DJANGO_ENV']
 
-DEBUG = True
-SECRET_KEY = 'for-test-secret-key'
-ALLOWED_HOSTS = []
+base_settings = [
+    'components/common/__init__.py',
+
+    'environments/{0}.py'.format(ENV),
+    optional('environments/local.py'),
+]
+
+include(*base_settings)

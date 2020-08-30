@@ -1,6 +1,6 @@
 import os
 
-from config.settings.component import BASE_DIR
+from ..path import BASE_DIR
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'config', 'locale'),

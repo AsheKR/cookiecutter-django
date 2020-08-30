@@ -1,6 +1,6 @@
 import os
 
-from config.settings.component import BASE_DIR
+from ..path import BASE_DIR
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-root
 
