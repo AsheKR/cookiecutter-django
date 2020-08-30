@@ -14,5 +14,7 @@ pep8:
 
 pylint:
     disable:
+        - no-self-use
+        - unused-argument
         - redefined-outer-name
         - too-few-public-methods
