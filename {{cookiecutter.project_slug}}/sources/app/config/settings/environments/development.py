@@ -1,4 +1,5 @@
 from config.settings.components.debug_toolbar import *  # noqa
+from config.settings.components.query_count import *  # noqa
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
 DEBUG = True

@@ -2,4 +2,5 @@
 
 # Debug
 # ---- ---- ---- ----
-django-debug-toolbar==2.2
+django-debug-toolbar==2.2  # https://github.com/jazzband/django-debug-toolbar
+django-querycount==0.7.0  # https://github.com/bradmontgomery/django-querycount
