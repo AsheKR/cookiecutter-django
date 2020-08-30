@@ -6,8 +6,12 @@ doc-warnings: false
 member-warnings: true
 max-line-length: 123
 
-pep8:
-    full: true
-
 dodgy:
     run: true
+
+pyflakes:
+    disable:
+        - F401
+        -
+pep8:
+    full: true
