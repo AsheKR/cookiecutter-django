@@ -9,9 +9,5 @@ max-line-length: 123
 dodgy:
     run: true
 
-pyflakes:
-    disable:
-        - F401
-        -
 pep8:
     full: true
