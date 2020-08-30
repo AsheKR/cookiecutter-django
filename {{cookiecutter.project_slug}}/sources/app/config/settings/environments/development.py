@@ -16,3 +16,9 @@ ALLOWED_HOSTS = [
 
 # https://docs.djangoproject.com/en/dev/ref/databases/#connecting-to-the-database
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}}
+
+# https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-AUTHENTICATION_BACKENDS
+AUTHENTICATION_BACKENDS = [
+    "utils.backends.admin_backend.SettingsBackend",
+    "django.contrib.auth.backends.ModelBackend",
+]
