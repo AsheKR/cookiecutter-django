@@ -5,5 +5,10 @@
     "database": [
         "postgresql",
         "sqlite3"
+    ],
+    "cloud_provider": [
+        "AWS",
+        "GCP",
+        "None"
     ]
 }
