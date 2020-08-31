@@ -7,7 +7,6 @@ repos:
             -   id: check-case-conflict
             -   id: check-merge-conflict
             -   id: check-symlinks
-            -   id: debug-statements
             -   id: detect-private-key
     -   repo: local
         hooks:
