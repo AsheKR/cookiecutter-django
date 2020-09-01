@@ -1,10 +1,14 @@
 from config.settings.components.debug_toolbar import *  # noqa
 from config.settings.components.query_count import *  # noqa
+from config.settings.components.common.environ import env  # noqa
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
 DEBUG = True
 
 SECRET_KEY = "DJANGO_SECRET_KEY"  # noqa
+
+ADMIN_LOGIN = env.str('ADMIN_LOGIN')
+ADMIN_PASSWORD = env.str('ADMIN_PASSWORD')
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = [
