@@ -8,9 +8,9 @@
         "postgresql"
     ],
     "cloud_provider": [
+        "None",
         "AWS",
-        "GCP",
-        "None"
+        "GCP"
     ],
     "use_drf": "y"
 }
