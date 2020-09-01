@@ -1,6 +1,7 @@
 # flake8: noqa
 from config.settings.components.common.app import *
 from config.settings.components.common.asset import *
+from config.settings.components.common.authentication import *
 from config.settings.components.common.cache import *
 from config.settings.components.common.environ import *
 from config.settings.components.common.i18n import *

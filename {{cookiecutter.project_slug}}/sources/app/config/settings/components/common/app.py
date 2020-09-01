@@ -7,7 +7,9 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 THIRD_PARTY_APPS = []
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "users.apps.UsersConfig",
+]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
