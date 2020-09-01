@@ -27,7 +27,7 @@ DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 
-{% if cookiecutter.cloud_provider != 'None' -%}
+{% if cookiecutter.cloud_provider != 'None' %}
 # STORAGES
 # ------------------------------------------------------------------------------
 # https://django-storages.readthedocs.io/en/latest/#installation
@@ -55,7 +55,7 @@ AWS_S3_REGION_NAME = env("AWS_S3_REGION_NAME", default=None)
 {% elif cookiecutter.cloud_provider == 'GCP' %}
 GS_BUCKET_NAME = env("DJANGO_GCP_STORAGE_BUCKET_NAME")
 GS_DEFAULT_ACL = "publicRead"
-{% endif -%}
+{% endif %}
 
 {% if cookiecutter.cloud_provider != 'None' %}
 # STATIC
@@ -78,4 +78,5 @@ MEDIA_URL = f"https://{aws_s3_domain}/media/"
 {% elif cookiecutter.cloud_provider == 'GCP' %}
 DEFAULT_FILE_STORAGE = "utils.storages.MediaRootGoogleCloudStorage"
 MEDIA_URL = f"https://storage.googleapis.com/{GS_BUCKET_NAME}/media/"
+{% endif %}
 {% endif %}

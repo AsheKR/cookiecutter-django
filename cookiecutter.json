@@ -1,15 +1,16 @@
 {
+    "project_domain": "ashe.kr",
     "project_name": "CookieCutter for Django",
     "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
 	"author": "tech@ashe.kr",
     "database": [
-        "postgresql",
-        "sqlite3"
+        "sqlite3",
+        "postgresql"
     ],
     "cloud_provider": [
         "AWS",
         "GCP",
         "None"
     ],
-    "use_drf": "n"
+    "use_drf": "y"
 }

@@ -11,12 +11,17 @@
 
 ## Overview
 
-anyone with access to the repository can generate a new repository with the same directory structure and files as your default branch.
+빠르게 Django 프로젝트를 시작할 수 있는 보일러플레이트
 
 ## Features
 
-- Works with Python 3.8
-- Default integration with [pre-commit](https://github.com/pre-commit/pre-commit) for identifying simple issues before submission to code review
+- Django 3.1
+- Python 3.8
+- Production 에서 사용할 수 있는 설정
+- Custom User Model
+- AWS S3 또는 GoogleCloud Storage 를 설정할 수 있음
+- 빠른 정적 검사를 위한 prospector
+- 커밋 전 코드를 검사하기 위한 pre-commit
 
 ## Usage
 
@@ -29,5 +34,5 @@ $ pip install cookiecutter
 2. generate Python Project
 
 ```shell script
-$ cookiecutter https://github.com/AsheKR/cookiecutter-python.git
+$ cookiecutter https://github.com/AsheKR/cookiecutter-django.git
 ```

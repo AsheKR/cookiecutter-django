@@ -4,9 +4,13 @@ import pytest
 @pytest.fixture
 def context():
     return {
+        "project_domain": "ashe.kr",
         "project_name": "My Test Project",
         "project_slug": "my_test_project",
         "author": "tech@ashe.kr",
+        "database": "sqlite3",
+        "cloud_provider": "none",
+        "use_drf": "y",
     }
 
 
