@@ -10,5 +10,6 @@
         "AWS",
         "GCP",
         "None"
-    ]
+    ],
+    "use_drf": "n"
 }
