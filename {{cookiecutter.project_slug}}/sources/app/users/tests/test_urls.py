@@ -1,14 +1,10 @@
-import pytest
 from django.contrib.auth import get_user_model
-from django.test import TestCase
 from django.urls import resolve, reverse
 
 User = get_user_model()
 
-pytestmark = pytest.mark.django_db
 
-
-class TestUserUrls(TestCase):
+class TestUserUrls:
     def test_detail(self, user: User):
         assert (
             reverse("users:detail", kwargs={"username": user.username})
@@ -23,5 +19,3 @@ class TestUserUrls(TestCase):
     def test_redirect(self):
         assert reverse("users:redirect") == "/users/~redirect/"
         assert resolve("/users/~redirect/").view_name == "users:redirect"
-
-

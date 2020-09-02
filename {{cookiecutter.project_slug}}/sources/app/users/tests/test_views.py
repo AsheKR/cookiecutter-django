@@ -2,7 +2,7 @@ import pytest
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AnonymousUser
 from django.http.response import Http404
-from django.test import RequestFactory, TestCase
+from django.test import RequestFactory
 
 from users.views import (
     UserRedirectView,
@@ -15,7 +15,7 @@ from users.tests.factories import UserFactory
 User = get_user_model()
 
 
-class TestUserUpdateView(TestCase):
+class TestUserUpdateView:
     def test_get_success_url(self, user: User, rf: RequestFactory):
         view = UserUpdateView()
         request = rf.get("/fake-url/")
@@ -35,7 +35,7 @@ class TestUserUpdateView(TestCase):
         assert view.get_object() == user
 
 
-class TestUserRedirectView(TestCase):
+class TestUserRedirectView:
     def test_get_redirect_url(self, user: User, rf: RequestFactory):
         view = UserRedirectView()
         request = rf.get("/fake-url")
@@ -46,7 +46,7 @@ class TestUserRedirectView(TestCase):
         assert view.get_redirect_url() == f"/users/{user.username}/"
 
 
-class TestUserDetailView(TestCase):
+class TestUserDetailView:
     def test_authenticated(self, user: User, rf: RequestFactory):
         request = rf.get("/fake-url/")
         request.user = UserFactory()

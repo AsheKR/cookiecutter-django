@@ -1,12 +1,12 @@
 from django.contrib.auth import get_user_model
-from django.test import RequestFactory, TestCase
+from django.test import RequestFactory
 
 from users.apis.views import UserViewSet
 
 User = get_user_model()
 
 
-class TestUserViewSet(TestCase):
+class TestUserViewSet:
     def test_get_queryset(self, user: User, rf: RequestFactory):
         view = UserViewSet()
         request = rf.get("/fake-url/")

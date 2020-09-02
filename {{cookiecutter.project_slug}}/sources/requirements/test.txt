@@ -9,6 +9,7 @@ coverage==5.2.1  # https://github.com/nedbat/coveragepy
 # Testing
 # ---- ---- ---- ----
 pytest==6.0.1  # https://github.com/pytest-dev/pytest1
+pytest-env==0.6.2  # https://github.com/MobileDynasty/pytest-env
 pytest-sugar==0.9.4  # https://github.com/Frozenball/pytest-sugar
 
 # Django

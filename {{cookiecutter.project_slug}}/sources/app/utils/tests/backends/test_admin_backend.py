@@ -5,7 +5,7 @@ from django.test import TestCase, override_settings
 class TestAdminBackend(TestCase):
     @override_settings(
         AUTHENTICATION_BACKENDS=[
-            "utils.backend.admin_backend.SettingsBackend",
+            "utils.backend.admin_backends.SettingsBackend",
             "django.contrib.auth.backends.ModelBackend",
         ],
         ADMIN_LOGIN="admin",

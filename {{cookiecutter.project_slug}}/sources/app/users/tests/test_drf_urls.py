@@ -1,11 +1,10 @@
 from django.contrib.auth import get_user_model
-from django.test import TestCase
 from django.urls import resolve, reverse
 
 User = get_user_model()
 
 
-class TestUserDrfUrls(TestCase):
+class TestUserDrfUrls:
     def test_user_detail(self, user: User):
         assert (
             reverse("api:user-detail", kwargs={"username": user.username})

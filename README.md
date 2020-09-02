@@ -36,3 +36,11 @@ $ pip install cookiecutter
 ```shell script
 $ cookiecutter https://github.com/AsheKR/cookiecutter-django.git
 ```
+
+# TODO: how to load fixture?
+# 오늘 할 것
+# 0. Load Fixture
+# 1. Rest Social OAuth2
+# 2. Django Extensions
+# 3. runsslserver
+# 4. drf-yasg, django-filter
