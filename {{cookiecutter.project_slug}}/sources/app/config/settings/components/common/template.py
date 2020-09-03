@@ -1,10 +1,14 @@
+from ..path import TEMPLATE_DIR
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#templates
 TEMPLATES = [
     {
         # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-TEMPLATES-BACKEND
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         # https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
-        "DIRS": [],
+        "DIRS": [
+            TEMPLATE_DIR,
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             # https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors

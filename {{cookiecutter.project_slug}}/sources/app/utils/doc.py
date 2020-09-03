@@ -2,7 +2,6 @@ from drf_yasg import openapi
 from drf_yasg.renderers import OpenAPIRenderer, ReDocRenderer as BaseReDocRenderer
 from drf_yasg.views import get_schema_view
 from rest_framework import permissions
-from rest_framework.schemas import SchemaGenerator
 
 BaseSchemaView = get_schema_view(
     openapi.Info(
@@ -12,7 +11,6 @@ BaseSchemaView = get_schema_view(
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
-    generator_class=SchemaGenerator,
 )
 
 
