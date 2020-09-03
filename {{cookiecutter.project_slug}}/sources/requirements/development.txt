@@ -5,3 +5,4 @@
 django-debug-toolbar==2.2  # https://github.com/jazzband/django-debug-toolbar
 django-querycount==0.7.0  # https://github.com/bradmontgomery/django-querycount
 django-extensions==3.0.7  # https://github.com/django-extensions/django-extensions
+django-sslserver==0.22  # https://github.com/teddziuba/django-sslserver#getting-started
