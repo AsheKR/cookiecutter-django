@@ -1,7 +1,8 @@
 from config.settings.components.debug_toolbar import *  # noqa
 from config.settings.components.extensions import *  # noqa
-from config.settings.components.sslserver import *  # noqa
+from config.settings.components.filter import *  # noqa
 from config.settings.components.query_count import *  # noqa
+from config.settings.components.sslserver import *  # noqa
 from config.settings.components.common.environ import env  # noqa
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
