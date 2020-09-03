@@ -15,6 +15,7 @@ urlpatterns = [
 # API URLS
 urlpatterns += [
     path("api/", include("config.api_router")),
+    path("auth/", include('rest_framework_social_oauth2.urls')),
 ]
 {% endif %}
 
